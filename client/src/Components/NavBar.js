@@ -14,7 +14,8 @@ function NavBar() {
                     <div className="collapse navbar-collapse justify-content-end" id="navbarCollapse">
                         <div className="navbar-nav">
                                 <Link to="/" className="nav-item nav-link active" id="Home">Home</Link>
-                                <Link to="/" className="nav-item nav-link" id="Contact">About</Link>
+
+                                <Link to="/about" className="nav-item nav-link" id="Contact">About</Link>
                                 <Link to="/login" className="nav-item nav-link" id="Contact">Login</Link>
                                 <Link to="/signUp" className="nav-item nav-link" id="Contact">SignUp</Link>
                                 
