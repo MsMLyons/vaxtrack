@@ -36,7 +36,7 @@ export default function CreateVaccine() {
             body: JSON.stringify(newVaccine),
         })
         .catch(err => {
-            window.alert(error); // how to add unique error message here?
+            window.alert(err); // how to add unique error message here?
             return;
         });
 

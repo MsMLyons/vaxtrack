@@ -15,7 +15,7 @@ const Vaccine = (props) => (
             <Link className="btn btn-link" to={`/edit/${props.vaccine._id}`}>Edit</Link> |
             <button className="btn btn-link"
                 onClick={() => {
-                    props.deleteRecord(props.vaccine._id);
+                    props.deleteVaccine(props.vaccine._id);
                 }}
             >
             Delete
@@ -48,7 +48,7 @@ export default function VaccineList() {
     }, [vaccines.length]);
 
     // delete a vaccination record
-    async function deleteVaccines(id) {
+    async function deleteVaccine(id) {
         await fetch(`http://localhost:5000/${id}`, { 
             method: 'DELETE'
         });
@@ -64,7 +64,7 @@ export default function VaccineList() {
                 <Vaccine
                     vaccine={vaccine}
                     deleteVaccine={() => deleteVaccine(vaccine._id)}
-                    key={vaccine.id}
+                    key={vaccine._id}
                 />
             );
         });
