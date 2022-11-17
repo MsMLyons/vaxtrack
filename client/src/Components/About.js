@@ -8,7 +8,7 @@ function About() {
     <div>
         <div className='about'>
         <h2>About</h2>
-        <p>As part of the GirlDevelopIt Hack4Health Hackathon, we developed the VaxTrack web application. We wanted to create a simple way to keep track of immunization records. VaxTrack allows users to add, update, and store vaccination records for themselves and their families.</p>
+        <p>As part of the GirlDevelopIt Hack4Health 2022 Hackathon, we developed the VaxTrack web application. We wanted to create a simple way to keep track of immunization records. VaxTrack allows users to add, update, and store vaccination records for themselves and their families.</p>
         </div>
 
         <div className='team'>
