@@ -9,6 +9,8 @@ import NavBar from "./Components/NavBar"
 import Login from "./Components/Login"
 import SignUp from "./Components/SignUp"
 import About from "./Components/About"
+import UserDashboard from "./Components/UserDashboard"
+import NewFamilyMember from "./Components/NewFamilyMember"
 
 function App() {
   return (
@@ -22,6 +24,8 @@ function App() {
         <Route path="/signUp" element={<SignUp />} />
         <Route path="/Login" element={<Login />} />
         <Route path="/About" element={<About />} />
+        <Route path="/userDashboard" element={<UserDashboard />} />
+        <Route path="/newFamilyMember" element={<NewFamilyMember />} />
       </Routes>
     </div>
   );
