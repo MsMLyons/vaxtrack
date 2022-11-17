@@ -2,16 +2,16 @@
         display: flex;
         flex-flow: column;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-evenly;
         border: 1px solid grey;
-        background: lightgray;
+        background: rgb(206, 204, 204);
         color:black;
-        align-items: center;
+        align-content: center;
         padding: 5%;
         margin: 300px 300px;
         font-family: sans-serif;
         font-size: 20px;
+        font-weight: bold;
         
-
 }
 
