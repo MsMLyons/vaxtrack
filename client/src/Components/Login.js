@@ -25,7 +25,7 @@ function Login() {
             </label>
 
             <label>
-            Passowrd:
+            Password:
             <input type="text" name="name" value={password} onChange={(e)=> setPassword(e.target.value)}/>
             </label>
 
