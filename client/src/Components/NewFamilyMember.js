@@ -36,7 +36,7 @@ function NewFamilyMember() {
                     <span class="focus-border"></span>
                 </div>
                 <div class="col">
-                    <input class="effect-1" type="text" placeholder="Upload picture" value={newMember.last_name} value={newMember.picture} onChange={(e)=>setNewMember({...newMember, picture: e.target.value})}/>
+                    <input class="effect-1" type="text" placeholder="Upload picture" value={newMember.picture} onChange={(e)=>setNewMember({...newMember, picture: e.target.value})}/>
                     <span class="focus-border"></span>
                 </div> 
                 <div className="form-btn-submit"><button   className="new-member-button">Add family member</button></div>

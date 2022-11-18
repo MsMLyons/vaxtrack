@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 function UserDashboard() {
     let members =[
       {id: 1,
-      name: "John",
+      name: "Samantha",
       picture: './avatar1.png'
       },
       {id: 2,
@@ -12,7 +12,7 @@ function UserDashboard() {
       picture: './avatar2.png'
       },
       {id: 3,
-      name: "Samantha",
+      name: "John",
       picture: './avatar3.png'
       }]
     const[familyMembers, setFamilyMembers]=useState(members)

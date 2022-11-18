@@ -82,9 +82,11 @@ export default function VaccineList() {
             );
         });
     }
-    const location = useLocation()
-    const {id}= location.state
-    console.log(id)
+    //commented below section out as it was interferring with navigation for buttons, giving a type as null error in console
+    // const location = useLocation()
+    // const {id}= location.state
+    
+
     // display vaccine records
     return (
         <div className="vaccine-table-dashboard">
