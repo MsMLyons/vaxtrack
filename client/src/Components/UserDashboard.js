@@ -1,21 +1,8 @@
 import React, {useState} from 'react'
 import '../Style/UserDashboard.css'
 import { Link } from 'react-router-dom'
-function UserDashboard() {
-    let members =[
-      {id: 1,
-      name: "Samantha",
-      picture: './avatar1.png'
-      },
-      {id: 2,
-      name: "Kate",
-      picture: './avatar2.png'
-      },
-      {id: 3,
-      name: "John",
-      picture: './avatar3.png'
-      }]
-    const[familyMembers, setFamilyMembers]=useState(members)
+function UserDashboard({familyMembers, setFamilyMembers}) {
+
 
   return (
     <div className="main-background-color">
@@ -34,7 +21,7 @@ function UserDashboard() {
           <h5>DISPLAY VACCINATION RECORDS</h5>
           <div className="family-members-list" >
           {familyMembers.map(member => {return(
-              <div className="card" >
+              <div className="card" key={member.id} >
                   <img className="card-img-top" src={member.picture} alt="..."/>
                   <div className="card-body">
                     <h5 className="card-title">{member.name}</h5>
@@ -46,8 +33,8 @@ function UserDashboard() {
         </div>
         <div className="add-family-members"> 
             <Link 
-            to={{pathname:"/newFamilyMember",
-            state:{familyMembers:familyMembers, setFamilyMembers: setFamilyMembers}}}
+            to="/newFamilyMember"
+             
             
             className="nav-item nav-link"
             id="Contact">
