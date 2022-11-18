@@ -17,25 +17,25 @@ function Login() {
 
   return (
     <div className="login-container">
-        Login
-        <img src='./VaxTrack.png' className='logo-login' alt="..."/>
+        <h4>Login</h4>
+        
         <form onSubmit={handleSubmit}>
-            <div className="form-input-fields">
-            <label>
-            User name:
-            <input type="text" name="name" value={userName} onChange={(e)=> setUserName(e.target.value)}/>
-            </label>
+            
+        <div class="col" className="form-input-fields">
+            <input class="effect-1" type="text" placeholder="Username" name="name" value={userName} onChange={(e)=> setUserName(e.target.value)}/>
+            <span class="focus-border"></span>
+        </div>
+           
+        <div class="col">
+            <input class="effect-1" type="text" name="name" placeholder="Password" value={password} onChange={(e)=> setPassword(e.target.value)}/>
+            <span class="focus-border"></span>
+        </div>
 
-            <label>
-            Password:
-            <input type="text" name="name" value={password} onChange={(e)=> setPassword(e.target.value)}/>
-            </label>
-
-            <button>Login</button>
-            </div>
+        <div className="form-btn-submit"><button className="new-member-button">Login </button></div>
+        
         </form>
-        or
-        <button>SignUp </button>
+
+        <div className="form-btn-submit"><button className="new-member-button">Sign Up </button></div>
 
 
     </div>
