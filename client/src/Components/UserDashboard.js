@@ -18,36 +18,36 @@ function UserDashboard() {
         </div>
         </div>
         <div className="family-members-information">
-          <h3>DISPLAY VACCINATION RECORDS</h3>
+          <h5>DISPLAY VACCINATION RECORDS</h5>
             <div className="family-members-list" >
                 <div className="card" >
                   <img className="card-img-top" src="./avatar3.png" alt="..."/>
                   <div className="card-body">
                     <h5 className="card-title">JOHN</h5>
-                    <img className="arrow-icon" src="./arrow.png" alt="..."/>
+                    <Link to="/vaccineList" ><img className="arrow-icon" src="./arrow.png" alt="..."/></Link>
                   </div>
-            </div>
+                </div>
+           
 
-            <div className="family-members-list" >
+            
                 <div className="card" >
                   <img className="card-img-top" src="./avatar2.png" alt="..."/>
                   <div className="card-body">
                     <h5 className="card-title">MEGGI</h5>
-                    <img className="arrow-icon" src="./arrow.png" alt="..."/>
+                    <Link to="/vaccineList" ><img className="arrow-icon" src="./arrow.png" alt="..."/></Link>
                   </div>
-                  </div>
-            </div>
+                </div>
 
-             <div className="family-members-list" >
+             
                 <div className="card" >
                   <img className="card-img-top" src="./avatar1.png" alt="..."/>
                   <div className="card-body">
                     <h5 className="card-title">HELEN</h5>
-                    <img className="arrow-icon" src="./arrow.png" alt="..."/>
+                    <Link to="/vaccineList" ><img className="arrow-icon" src="./arrow.png" alt="..."/></Link>
                   </div>
-                  </div>
+                 </div>
             </div>
-        </div>
+        
         <div className="add-family-members"> <Link to="/newFamilyMember" className="nav-item nav-link" id="Contact"><button className="add-new-family-member" >Add new family member</button></Link></div>
 
         </div>

@@ -6,21 +6,20 @@
 .user-dashboard-container{
     display: flex;
     align-items: flex-start;
-    justify-content: flex-start;
+    justify-content: space-around;
     padding: 3%;
-    
-
 }
 .user-information{
     width: 30%
 }
 
 .family-members-information{
-    width: 70%;
+    width: 50vw;
     margin-left: 5%;
+}
+.family-members-list{
     display: flex;
-    align-items: center;
-    flex-direction: column;
+    justify-content: center;
 
 }
 .user-introduction{
@@ -43,12 +42,7 @@
    border-radius: 25px
    
 }
-.family-members-list{
-    height: 50vh;
-    
-    display: flex;
-    border-radius: 25px
-}
+
 .add-family-members{
     height: 14vh;
     display: flex;
@@ -81,12 +75,14 @@
 
 .card-img-top{
     width: 10vw;
+    border-radius: 50px;
 }
 .card{
     padding-top: 1vw;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgb(243, 247, 247, 0.2);
 }
 
 .arrow-icon{
