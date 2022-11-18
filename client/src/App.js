@@ -15,7 +15,6 @@ import NewFamilyMember from "./Components/NewFamilyMember"
 function App() {
   return (
     <div className='page-container'>
-    <div className="">
       <NavBar />
       <Routes>
         <Route exact path="/" element={<Home />} />
@@ -28,7 +27,7 @@ function App() {
         <Route path="/userDashboard" element={<UserDashboard />} />
         <Route path="/newFamilyMember" element={<NewFamilyMember />} />
       </Routes>
-    <div id="content-wrap">
+    <div id="footer">
         <footer className="partners">
           <img src="./pfizer.png" alt='..' className="logo-vaccine"/>
           <img src="./moderna.png" alt='..' className="logo-vaccine"/>
@@ -38,8 +37,6 @@ function App() {
         </footer>
       </div>
     </div>
-    </div>
-     
   );
 };
 

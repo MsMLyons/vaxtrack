@@ -17,7 +17,9 @@ function Home() {
       add picture here
 
       </div>
-       
+
+      <div className='filler'></div>
+
     </div>
 
   )
