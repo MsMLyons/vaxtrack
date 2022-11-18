@@ -14,12 +14,6 @@ function Home() {
         <img className="img-mainpage" src='./HomePic.png' alt="HomePic" />
       </div>
     </div>  
-<<<<<<< HEAD
-=======
-
-
-    
->>>>>>> 88a8356b6290f96cb7534bf228efa01c34d7be21
 
 
   )
