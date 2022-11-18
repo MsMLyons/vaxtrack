@@ -12,6 +12,11 @@ function SignUp() {
         <img src='./VaxTrack.png' className='logo-login' alt="..."/>
         <form onSubmit={handleSubmit}>
             <div className="form-input-fields">
+
+                
+                  <label for="exampleInputEmail1">Name</label>
+                  <input type="text" className="form-control" />
+              
             <label>
             User name:
             <input type="text" name="name" value={newUser.name} onChange={(e)=> setNewUser({...newUser, name: e.target.value})}/>

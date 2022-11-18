@@ -5,7 +5,7 @@ function UserDashboard() {
 
     
   return (
-    <div>
+    <div className="main-background-color">
     <div className='user-dashboard-container'>
         <div className="user-information">
         <div className="user-introduction">
@@ -18,22 +18,49 @@ function UserDashboard() {
         </div>
         </div>
         <div className="family-members-information">
-        <div className="family-members-list" >Family members</div>
-        <div className="add-family-members"> <Link to="/newFamilyMember" className="nav-item nav-link" id="Contact"><button >Add new family member</button></Link></div>
-        
-        
-        </div>
-        
+          <h5>DISPLAY VACCINATION RECORDS</h5>
+            <div className="family-members-list" >
+                <div className="card" >
+                  <img className="card-img-top" src="./avatar3.png" alt="..."/>
+                  <div className="card-body">
+                    <h5 className="card-title">JOHN</h5>
+                    <Link to="/vaccineList" ><img className="arrow-icon" src="./arrow.png" alt="..."/></Link>
+                  </div>
+                </div>
+           
 
-    </div>
-    <div className="partners">
-    <img src="./pfizer.png" alt='..' className="logo-vaccine"/>
-    <img src="./moderna.png" alt='..' className="logo-vaccine"/>
-    <img src="./novartis.png" alt='..' className="logo-vaccine"/>
-    <img src="./merk.png" alt='..' className="logo-vaccine"/>
-    <img src="./johnson.png" alt='..' className="logo-vaccine"/>
-    </div>
-    </div>
+            
+                <div className="card" >
+                  <img className="card-img-top" src="./avatar2.png" alt="..."/>
+                  <div className="card-body">
+                    <h5 className="card-title">MEGGI</h5>
+                    <Link to="/vaccineList" ><img className="arrow-icon" src="./arrow.png" alt="..."/></Link>
+                  </div>
+                </div>
+
+             
+                <div className="card" >
+                  <img className="card-img-top" src="./avatar1.png" alt="..."/>
+                  <div className="card-body">
+                    <h5 className="card-title">HELEN</h5>
+                    <Link to="/vaccineList" ><img className="arrow-icon" src="./arrow.png" alt="..."/></Link>
+                  </div>
+                 </div>
+            </div>
+        
+        <div className="add-family-members"> <Link to="/newFamilyMember" className="nav-item nav-link" id="Contact"><button className="add-new-family-member" >Add new family member</button></Link></div>
+
+        </div>
+
+        </div>
+        <div className="partners">
+        <img src="./pfizer.png" alt='..' className="logo-vaccine"/>
+        <img src="./moderna.png" alt='..' className="logo-vaccine"/>
+        <img src="./novartis.png" alt='..' className="logo-vaccine"/>
+        <img src="./merk.png" alt='..' className="logo-vaccine"/>
+        <img src="./johnson.png" alt='..' className="logo-vaccine"/>
+        </div>
+      </div>
   )
 }
 

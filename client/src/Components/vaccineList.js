@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import '../Style/VaccineList.css'
 
 const Vaccine = (props) => (
     <tr>
@@ -72,12 +73,13 @@ export default function VaccineList() {
 
     // display vaccine records
     return (
-        <div>
-            <h3>Vaccine List</h3>
+        <div className="vaccine-table-dashboard">
+            <h4>Vaccination records for NAME</h4>
+            <div className="vaccine-table">
             <table className="table table">
                 <thead>
                     <tr>
-                        <th>Vaccine Name</th>
+                        <th>Name</th>
                         <th>Date Given</th>
                         <th>Dose</th>
                         <th>Expiration</th>
@@ -89,6 +91,7 @@ export default function VaccineList() {
                 </thead>
                 <tbody>{vaccineList()}</tbody>
             </table>
+            </div>
         </div>
     );
 }

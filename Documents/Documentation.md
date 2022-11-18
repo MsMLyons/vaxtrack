@@ -15,7 +15,7 @@ System Description for
 
 ## App Description<h4>
 
-Esse sistema foi desenvolvido para que se possa manter rastreável os registros de vacinas em grupos sociais e familiares.
+As part of the GirlDevelopIt Hack4Health 2022 Hackathon, we developed the VaxTrack web application. We wanted to create a simple way to keep track of immunization records. VaxTrack allows users to add, update, and store vaccination records for themselves and their families.
 
 ## How to Use the App / FAQ 
 
