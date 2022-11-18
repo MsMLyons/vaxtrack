@@ -64,9 +64,10 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+   
 }
 .logo-vaccine{
-    width: 10%
+    width: 8%
 }
 
 .tip-text{
