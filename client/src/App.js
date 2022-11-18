@@ -1,5 +1,5 @@
 // import './App.css';
-import React from 'react';
+import React, {useState} from 'react';
 import { Route, Routes } from 'react-router-dom';
 import VaccineList from "./Components/vaccineList";
 import CreateVaccine from "./Components/createVaccine";
@@ -13,19 +13,34 @@ import UserDashboard from "./Components/UserDashboard"
 import NewFamilyMember from "./Components/NewFamilyMember"
 
 function App() {
+      let members =[
+      {id: 1,
+      name: "Kate",
+      picture: './avatar1.png'
+      },
+      {id: 2,
+      name: "Samantha",
+      picture: './avatar2.png'
+      },
+      {id: 3,
+      name: "John",
+      picture: './avatar3.png'
+      }]
+    const[familyMembers, setFamilyMembers]=useState(members)
+    const[loggedIn, setLoggedIn]=useState(false)
   return (
     <div className="">
-      <NavBar />
+      <NavBar loggedIn={loggedIn} setLoggedIn={setLoggedIn}/>
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route path="/createVaccine" element={<CreateVaccine />} />
         <Route path="/editVaccine" element={<EditVaccine />} />
         <Route path="/vaccineList" element={<VaccineList />} />
         <Route path="/signUp" element={<SignUp />} />
-        <Route path="/Login" element={<Login />} />
+        <Route path="/Login" element={<Login loggedIn={loggedIn} setLoggedIn={setLoggedIn}/>} />
         <Route path="/About" element={<About />} />
-        <Route path="/userDashboard" element={<UserDashboard />} />
-        <Route path="/newFamilyMember" element={<NewFamilyMember />} />
+        <Route path="/userDashboard"  element={<UserDashboard familyMembers={familyMembers} setFamilyMembers={setFamilyMembers} />} />
+        <Route path="/newFamilyMember"  element={<NewFamilyMember familyMembers={familyMembers} setFamilyMembers={setFamilyMembers}/>} />
       </Routes>
                <div className="partners">
           <img src="./pfizer.png" alt='..' className="logo-vaccine"/>
