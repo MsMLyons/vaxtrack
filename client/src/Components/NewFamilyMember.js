@@ -1,10 +1,8 @@
 import React, {useState} from 'react'
 import '../Style/NewFamilyMember.css'
 import { useNavigate, useLocation} from 'react-router-dom';
-function NewFamilyMember() {
-   const location = useLocation()
-  //  const {familyMembers, setFamilyMembers}= location.state
-  //  console.log(location.state)
+function NewFamilyMember({familyMembers, setFamilyMembers}) {
+
     
     
 
@@ -12,8 +10,10 @@ function NewFamilyMember() {
     const[newMember, setNewMember]=useState({name:"", last_name:"", picture: ""})
     function handleNewMember(e){
       e.preventDefault()
-      console.log(newMember)
-
+      
+      let newId = familyMembers.length+1
+      console.log( newId)
+      setFamilyMembers([...familyMembers, {id:newId ,name: newMember.name , picture: newMember.picture}])
       setNewMember({name:"", last_name:""})
       navigate("/userDashboard")
     }
