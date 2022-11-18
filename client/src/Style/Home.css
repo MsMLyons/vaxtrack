@@ -24,7 +24,6 @@
     margin: 3%;
 }
 .picture-main{
-    width: 45%;
     display: flex;
     justify-content: center;
 }
@@ -34,3 +33,9 @@
     width: 45%
 >>>>>>> update home
 }
+
+.img-mainpage{
+    width: 45%;
+}
+
+
