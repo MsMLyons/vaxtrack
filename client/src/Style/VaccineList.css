@@ -1,9 +1,10 @@
 .vaccine-table-dashboard{
-    margin-top: 2%;
+    margin-left: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 }
 .vaccine-table{
     margin-right: 1rem;

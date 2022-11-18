@@ -1,7 +1,8 @@
-import React from 'react'
+import React, {useState} from 'react'
 import '../Style/UserDashboard.css'
 import { Link } from 'react-router-dom'
 function UserDashboard() {
+  const[familyMembers, setFamilyMembers]=useState(["John", "Kate"])
 
     
   return (
@@ -34,10 +35,23 @@ function UserDashboard() {
                   <img className="card-img-top" src="./avatar2.png" alt="..."/>
                   <div className="card-body">
                     <h5 className="card-title">MEGGI</h5>
-                    <Link to="/vaccineList" ><img className="arrow-icon" src="./arrow.png" alt="..."/></Link>
+                    <Link to={{pathname:"/vaccineList"}}><img className="arrow-icon" src="./arrow.png" alt="..."/></Link>
                   </div>
                 </div>
-
+                <div className="card" >
+                  <img className="card-img-top" src="./avatar2.png" alt="..."/>
+                  <div className="card-body">
+                    <h5 className="card-title">MEGGI</h5>
+                    <Link to={{pathname:"/vaccineList"}}><img className="arrow-icon" src="./arrow.png" alt="..."/></Link>
+                  </div>
+                </div>
+                <div className="card" >
+                  <img className="card-img-top" src="./avatar2.png" alt="..."/>
+                  <div className="card-body">
+                    <h5 className="card-title">MEGGI</h5>
+                    <Link to={{pathname:"/vaccineList"}}><img className="arrow-icon" src="./arrow.png" alt="..."/></Link>
+                  </div>
+                </div>
              
                 <div className="card" >
                   <img className="card-img-top" src="./avatar1.png" alt="..."/>
@@ -48,7 +62,7 @@ function UserDashboard() {
                  </div>
             </div>
         
-        <div className="add-family-members"> <Link to="/newFamilyMember" className="nav-item nav-link" id="Contact"><button className="add-new-family-member" >Add new family member</button></Link></div>
+        <div className="add-family-members"> <Link to="/newFamilyMember" state={{familyMembers: familyMembers, setFamilyMembers: setFamilyMembers }} className="nav-item nav-link" id="Contact"><button className="add-new-family-member" >Add new family member</button></Link></div>
 
         </div>
 
