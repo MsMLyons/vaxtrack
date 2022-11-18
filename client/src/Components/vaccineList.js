@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+
 import '../Style/VaccineList.css'
 
 const Vaccine = (props) => (
@@ -29,7 +30,7 @@ export default function VaccineList() {
     const navigate = useNavigate();
     const [vaccines, setVaccines] = useState([]);
     function addNewVaccine(){
-        console.log("new vaccine")
+        navigate("/createVaccine")
     }
     function returnToDashboard(){
       navigate("/userDashboard")

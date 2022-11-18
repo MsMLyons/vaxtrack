@@ -2,6 +2,8 @@ const express = require('express');
 const app = express();
 const cors = require('cors');
 require('dotenv').config({ path: "./config.env"});
+const mongoose = require('mongoose')
+const connectDb = require(./config/dbConn)
 const port = process.env.PORT || 5000;
 app.use(cors()); // throws error: app.use is not a function
 app.use(express.json());

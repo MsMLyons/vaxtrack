@@ -1,7 +1,7 @@
 .new-family-member{
   display: flex;
   flex-direction: column;
-  margin-left: 2rem;
+  margin-left: 0.5rem;
   align-items: center;
 }
 .form-outline{
@@ -56,6 +56,10 @@
   display: flex;
   width: 100vw;
  
+}
+.return-btn-container{
+  align-self: flex-start;
+  margin-left: 1rem;
 }
 
 
