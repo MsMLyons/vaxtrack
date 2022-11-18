@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 
 import '../Style/VaccineList.css'
 
@@ -82,7 +82,9 @@ export default function VaccineList() {
             );
         });
     }
-
+    const location = useLocation()
+    const {id}= location.state
+    console.log(id)
     // display vaccine records
     return (
         <div className="vaccine-table-dashboard">
