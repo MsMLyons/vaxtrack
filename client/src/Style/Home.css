@@ -1,17 +1,17 @@
-.home-container{
-        display: flex;
-        flex-flow: column;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        border: 1px solid grey;
-        background: rgb(206, 204, 204);
-        color:black;
-        align-content: center;
-        padding: 5%;
-        margin: 300px 300px;
-        font-family: sans-serif;
-        font-size: 20px;
-        font-weight: bold;
-        
-}
 
+.home-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3%;
+}
+.picture-main{
+    width: 45%;
+    display: flex;
+    justify-content: center;
+}
+.text-main{
+    margin-top: 4%;
+    padding: 2%;
+    width: 45%
+}
