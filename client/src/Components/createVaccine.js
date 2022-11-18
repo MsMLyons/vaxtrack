@@ -64,7 +64,8 @@ export default function CreateVaccine() {
     // add additional vaccine names to select from
     // may need to read form values for typos and info errors
     return (
-        <div className="vaccineAddForm">
+
+        <div className="vaccineAddForm" "create-vaccine-dashboard">
             <h3>Add a New Vaccine Record</h3>
             <form onSubmit={onSubmit}>
                 <div className="form-group">
@@ -135,41 +136,43 @@ export default function CreateVaccine() {
                 </div>
 
                 <div className="form-group">
-                    <label htmlFor="manufacturer">Manufacturer</label>
                     <input
                         type="text"
-                        className="form-control"
+                        className="effect-1"
                         id="manufacturer"
+                        placeholder="Manufacturer"
                         value={form.manufacturer}
                         onChange={(e) => updateForm({ manufacturer: e.target.value })}
                     />
                 </div>
                 <div className="form-group">
+
                     <label htmlFor="medicalProfessional">Medical Professional Administering Vaccine</label>
                     <input
                         type="text"
-                        className="form-control"
+                        className="effect-1"
                         id="medicalProfessional"
+                        placeholder="Medical Professional"
                         value={form.medicalProfessional}
                         onChange={(e) => updateForm({ medicalProfessional: e.target.value })}
                     />
                 </div>
                 <div className="form-group">
-                    <label htmlFor="frequency">Frequency</label> 
                     <input
                         type="text"
-                        className="form-control"
+                        className="effect-1"
                         id="frequency"
                         value={form.frequency}
                         onChange={(e) => updateForm({ frequency: e.target.value })}
                     />
                 </div>
                 <div className="form-group">
-                    <label htmlFor="description">Description</label>
+                    
                     <input
                         type="text"
-                        className="form-control"
+                        className="effect-1"
                         id="description"
+                        placeholder="Description"
                         value={form.description}
                         onChange={(e) => updateForm({ description: e.target.value })}
                         />

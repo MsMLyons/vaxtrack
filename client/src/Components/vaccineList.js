@@ -28,7 +28,9 @@ const Vaccine = (props) => (
 export default function VaccineList() {
     const navigate = useNavigate();
     const [vaccines, setVaccines] = useState([]);
-
+    function addNewVaccine(){
+        console.log("new vaccine")
+    }
     function returnToDashboard(){
       navigate("/userDashboard");
     }
@@ -83,8 +85,11 @@ export default function VaccineList() {
     // display vaccine records
     return (
         <div className="vaccine-table-dashboard">
-            <div className="new-family-member-headline"><div className="return-btn-container"><button className="btn btn-outline-info" onClick={returnToDashboard}>Return to dashboard</button></div>
-            <div><button className="btn btn-outline-info" onClick={navigateToCreateVaccine}>Add New Vaccine</button></div>
+            <div className="new-family-member-headline">
+                <div className="return-btn-container">
+                    <button className="btn btn-outline-info" onClick={returnToDashboard}>Return to dashboard</button> 
+                    <button className="btn btn-outline-info" onClick={addNewVaccine}>Add new vaccine record</button></div>
+                    <input placeholder="Search..."/>
                 </div>
             <h4>Vaccination records for NAME</h4>
             <div className="vaccine-table">

@@ -5,6 +5,7 @@ function SignUp() {
     function handleSubmit(e){
         e.preventDefault()
         console.log(newUser)
+        //navigate login
     }
     return (
         <div className="login-container">
@@ -19,7 +20,7 @@ function SignUp() {
               
             <label>
             User name:
-            <input type="text" name="name" value={newUser.name} onChange={(e)=> setNewUser({...newUser, name: e.target.value})}/>
+            <input className="effect-1" type="text" placeholder="User name" name="name" value={newUser.name} onChange={(e)=> setNewUser({...newUser, name: e.target.value})}/>
             </label>
             <label>
             Last name:
