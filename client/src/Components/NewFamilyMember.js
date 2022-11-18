@@ -2,9 +2,11 @@ import React, {useState} from 'react'
 import '../Style/NewFamilyMember.css'
 import { useNavigate, useLocation} from 'react-router-dom';
 function NewFamilyMember() {
-    const location = useLocation()
-    const { familyMembers, setFamilyMembers } = location
-    console.log(location)
+   const location = useLocation()
+   const {familyMembers, setFamilyMembers}= location.state
+   console.log(location.state)
+    
+    
 
     const navigate = useNavigate();
     const[newMember, setNewMember]=useState({name:"", last_name:"", picture: ""})

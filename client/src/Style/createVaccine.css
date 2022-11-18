@@ -1,3 +1,21 @@
+
+.vaccineAddForm{
+    margin-right: 4rem;
+    margin-left: 4rem;}
+h3{
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+.dose {
+    margin-left: 1rem;
+}
+.form-input {
+    width: 30%;
+}
+.vaccineDropDown {
+    margin-left: 1rem;
+}
+
 .create-vaccine-dashboard{
     display: flex;
     align-items: center;

@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router';
+// import { useNavigate } from 'react-router';
+import VaccineList from './vaccineList';
+import {Routes, Route, useNavigate} from 'react-router-dom';
 import '../Style/createVaccine.css'
+
 export default function CreateVaccine() {
     const [form, setForm] = useState({
         vaccineName: '',
@@ -13,6 +16,10 @@ export default function CreateVaccine() {
         description: '',
     });
     const navigate = useNavigate();
+
+    const navigateToVaccineList = () => {
+        navigate('/vaccineList');
+    };
 
     // update state properties
     function updateForm(value) {
@@ -70,25 +77,34 @@ export default function CreateVaccine() {
                     <label htmlFor="vaccineName">Vaccine Name</label>
                     <select 
                         name="vaccines" 
+                        className='vaccineDropDown'
                         id="vaccineName" 
                         value={form.vaccineName}
                         onChange={(e) => updateForm({ vaccineName: e.target.value })}
                     >
                             <option value="">Select the vaccine to record</option>
                             <option value="covid">Covid</option>
-                            <option value="diptheria">Diptheria</option>
-                            <option value="flu">Flu</option>
-                            <option value="hepatitis">Hepatitis</option>
-                            <option value="measles">Measles</option>
+                            <option value="dengue">Dengue</option>
+                            <option value="diptheria">DTaP (Diptheria, Tetanus, & Accellular Pertussis)</option>
+                            <option value="flu">Influenza</option>
+                            <option value="hepatitisA">Hepatitis A</option>
+                            <option value="hepatitisB">Hepatitis B</option>
+                            <option value="hpv">HPV (Human Paillomavirus)</option>
+                            <option value="measles">MMR (Measles, Mumps, Rubella)</option>
+                            <option value="meningococcal">Meningococcal</option>
+                            <option value="pneumococcal">Pneumococcal</option>
+                            <option value="poliovirus">Inactivated Poliovirus</option>
+                            <option value="rotavirus">Rotavirus</option>
                             <option value="tuberculosis">Tuberculosis</option>
                             <option value="varicella">Varicella</option>
+                            <option value="zoster">Zoster</option>
                     </select>
                 </div>
                 <div className="form-group">
                     <label htmlFor="dateGiven">Date Given</label>
                     <input 
                         type="date" 
-                        className="form-control" 
+                        className="form-control form-input" 
                         id="dateGiven" 
                         value={form.dateGiven}
                         onChange={(e) => updateForm({ dateGiven: e.target.value })}
@@ -97,6 +113,7 @@ export default function CreateVaccine() {
                 <div className="form-group">
                     <label htmlFor="dose">Dose</label>
                     <select 
+                        className='dose'
                         name="dose" 
                         id="dose" 
                         value={form.dose}
@@ -116,7 +133,7 @@ export default function CreateVaccine() {
                     <label htmlFor="expiration">Expiration</label>
                     <input 
                         type="date" 
-                        className="form-control" 
+                        className="form-control form-input"
                         id="expiration" 
                         value={form.expiration}
                         onChange={(e) => updateForm({ expiration: e.target.value })}
@@ -134,11 +151,12 @@ export default function CreateVaccine() {
                     />
                 </div>
                 <div className="form-group">
+
                     <input
                         type="text"
                         className="effect-1"
                         id="medicalProfessional"
-                        placeholder="Medical Professional"
+                        placeholder="Medical Professional Administering Vaccine"
                         value={form.medicalProfessional}
                         onChange={(e) => updateForm({ medicalProfessional: e.target.value })}
                     />
@@ -171,7 +189,14 @@ export default function CreateVaccine() {
                         className="new-vaccine-button"
                     />
                 </div>
+                <div>
+                <button className="btn btn-outline-info" onClick={navigateToVaccineList}>Back To Vaccine List</button>
+                <Routes>
+                    <Route path="/vaccineList" element={<VaccineList />} />
+                </Routes>
+            </div>
             </form>
+            
         </div>
     );
 }

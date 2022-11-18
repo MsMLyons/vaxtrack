@@ -33,7 +33,11 @@ export default function VaccineList() {
         navigate("/createVaccine")
     }
     function returnToDashboard(){
-      navigate("/userDashboard")
+      navigate("/userDashboard");
+    }
+
+    function navigateToCreateVaccine(){
+        navigate('/createVaccine');
     }
 
     // fetch vaccination records from db
@@ -85,7 +89,7 @@ export default function VaccineList() {
             <div className="new-family-member-headline">
                 <div className="return-btn-container">
                     <button className="btn btn-outline-info" onClick={returnToDashboard}>Return to dashboard</button> 
-                    <button className="btn btn-outline-info" onClick={addNewVaccine}>Add new record</button></div>
+                    <button className="btn btn-outline-info" onClick={navigateToCreateVaccine}>Add new vaccine record</button></div>
                     <input placeholder="Search..."/>
                 </div>
             <h4>Vaccination records for NAME</h4>
