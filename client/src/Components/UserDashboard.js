@@ -61,9 +61,16 @@ function UserDashboard() {
                   </div>
                  </div>
             </div>
-        
-        <div className="add-family-members"> <Link to="/newFamilyMember" state={{familyMembers: familyMembers, setFamilyMembers: setFamilyMembers }} className="nav-item nav-link" id="Contact"><button className="add-new-family-member" >Add new family member</button></Link></div>
-
+      
+        <div className="add-family-members"> 
+            <Link 
+            to={{pathname:"/newFamilyMember",
+            state:{familyMembers:familyMembers, setFamilyMembers: setFamilyMembers}}}
+            
+            className="nav-item nav-link"
+            id="Contact">
+              <button className="add-new-family-member" >Add new family member</button>
+            </Link></div>
         </div>
 
         </div>
