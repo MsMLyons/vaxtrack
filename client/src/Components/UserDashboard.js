@@ -18,61 +18,49 @@ function UserDashboard() {
         </div>
         </div>
         <div className="family-members-information">
-        <div className="family-members-list" >
+          <h3>DISPLAY VACCINATION RECORDS</h3>
+            <div className="family-members-list" >
+                <div className="card" >
+                  <img className="card-img-top" src="./avatar3.png" alt="..."/>
+                  <div className="card-body">
+                    <h5 className="card-title">JOHN</h5>
+                    <img className="arrow-icon" src="./arrow.png" alt="..."/>
+                  </div>
+            </div>
 
+            <div className="family-members-list" >
+                <div className="card" >
+                  <img className="card-img-top" src="./avatar2.png" alt="..."/>
+                  <div className="card-body">
+                    <h5 className="card-title">MEGGI</h5>
+                    <img className="arrow-icon" src="./arrow.png" alt="..."/>
+                  </div>
+                  </div>
+            </div>
 
-           <table class="table">
-  <thead>
-    <tr>
-      <th scope="col"></th>
-      <th scope="col">First name</th>
-      <th scope="col">Last name</th>
-      
-    </tr>
-  </thead>
-  <tbody>
-    <tr >
-      <td scope="row" className="row-img"><img className="avatar-family-member" src="./avatar1.png" alt="..."/></td>
-  
-      <td>Mark</td>
-      <td>Otto</td>
-      <td><img className="arrow-icon" src="./arrow.png" alt="..."/></td>
-
-      
-    </tr>
-    <tr>
-      <td scope="row"><img className="avatar-family-member" src="./avatar2.png" alt="..."/></td>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td><img className="arrow-icon" src="./arrow.png" alt="..."/></td>
-      
-    </tr>
-    <tr>
-      <td scope="row"><img className="avatar-family-member" src="./avatar3.png" alt="..."/></td>
-      <td>Larry</td>
-      <td>Bird</td>
-      <td><img className="arrow-icon" src="./arrow.png" alt="..."/></td>
-      
-      
-    </tr>
-  </tbody>
-</table>
+             <div className="family-members-list" >
+                <div className="card" >
+                  <img className="card-img-top" src="./avatar1.png" alt="..."/>
+                  <div className="card-body">
+                    <h5 className="card-title">HELEN</h5>
+                    <img className="arrow-icon" src="./arrow.png" alt="..."/>
+                  </div>
+                  </div>
+            </div>
         </div>
         <div className="add-family-members"> <Link to="/newFamilyMember" className="nav-item nav-link" id="Contact"><button className="add-new-family-member" >Add new family member</button></Link></div>
-        
-        
-        </div>
-        
 
-    </div>
-    <div className="partners">
-    <img src="./pfizer.png" alt='..' className="logo-vaccine"/>
-    <img src="./moderna.png" alt='..' className="logo-vaccine"/>
-    <img src="./novartis.png" alt='..' className="logo-vaccine"/>
-    <img src="./merk.png" alt='..' className="logo-vaccine"/>
-    <img src="./johnson.png" alt='..' className="logo-vaccine"/>
-    </div>
-    </div>
+        </div>
+
+        </div>
+        <div className="partners">
+        <img src="./pfizer.png" alt='..' className="logo-vaccine"/>
+        <img src="./moderna.png" alt='..' className="logo-vaccine"/>
+        <img src="./novartis.png" alt='..' className="logo-vaccine"/>
+        <img src="./merk.png" alt='..' className="logo-vaccine"/>
+        <img src="./johnson.png" alt='..' className="logo-vaccine"/>
+        </div>
+      </div>
   )
 }
 

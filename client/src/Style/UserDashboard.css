@@ -17,7 +17,10 @@
 
 .family-members-information{
     width: 70%;
-    margin-left: 5%
+    margin-left: 5%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 
 }
 .user-introduction{
@@ -42,7 +45,7 @@
 }
 .family-members-list{
     height: 50vh;
-    background-color: rgb(247, 247, 247);
+    
     display: flex;
     border-radius: 25px
 }
@@ -51,6 +54,7 @@
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
+    align-self: flex-end;
 }
 .avatar-img{
     height: 60%;
@@ -75,15 +79,16 @@
     text-align:justify
 }
 
-.avatar-family-member{
-    border-radius: 50%;
-    width: 3vw
-    
+.card-img-top{
+    width: 10vw;
+}
+.card{
+    padding-top: 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.row-img{
-    width: 7vw
-}
 .arrow-icon{
      width: 3vw
 }
@@ -107,7 +112,7 @@
   text-decoration: none;
   transition: all 250ms;
   border: 0;
-  font-size: 16px;
+  font-size: 20px;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
@@ -116,4 +121,8 @@
 .add-new-family-member:hover {
   box-shadow: rgba(187, 108, 44, 0.35) 0 -25px 18px -14px inset,rgba(205, 101, 32, 0.25) 0 1px 2px,rgba(187, 101, 44, 0.25) 0 2px 4px,rgba(187, 111, 44, 0.25) 0 4px 8px,rgba(212, 129, 28, 0.25) 0 8px 16px,rgba(213, 116, 31, 0.25) 0 16px 32px;
   transform: scale(1.1) ;
+}
+
+.card{
+    width: 18rem;
 }
