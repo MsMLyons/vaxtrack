@@ -1,4 +1,6 @@
+
 .home-container{
+<<<<<<< HEAD
         display: flex;
         align-items: center;
         justify-content: center;
@@ -15,5 +17,20 @@
         margin-top: 4%;
         padding: 2%;
         width: 45%   
+=======
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3%;
 }
-
+.picture-main{
+    width: 45%;
+    display: flex;
+    justify-content: center;
+}
+.text-main{
+    margin-top: 4%;
+    padding: 2%;
+    width: 45%
+>>>>>>> update home
+}
