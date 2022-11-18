@@ -17,9 +17,7 @@ export default function CreateVaccine() {
     });
     const navigate = useNavigate();
 
-    const navigateToVaccineList = () => {
-        navigate('/vaccineList');
-    };
+ 
 
     // update state properties
     function updateForm(value) {
@@ -63,6 +61,9 @@ export default function CreateVaccine() {
     function returnToDashboard(){
         navigate('/userDashboard')
     }
+    function navigateToVaccineList() {
+        navigate('/vaccineList');
+    };
 
     // form to create the vaccine record
     // add additional vaccine names to select from
@@ -70,7 +71,12 @@ export default function CreateVaccine() {
     return (
         <div className='create-vaccine-dashboard'>
             <div className="return-btn-container">
-                    <button className="btn btn-outline-info" onClick={returnToDashboard}>Return to dashboard</button> </div>
+                    <button className="btn btn-outline-info" onClick={returnToDashboard}>Return to dashboard</button> 
+                    <button className="btn btn-outline-info" onClick={navigateToVaccineList}>Back To Vaccine List</button>
+                <Routes>
+                    <Route path="/vaccineList" element={<VaccineList />} />
+                </Routes>
+                </div>
             <h4>Add a New Vaccine Record</h4>
             <form onSubmit={onSubmit}>
                 <div className="form-group">
@@ -190,10 +196,7 @@ export default function CreateVaccine() {
                     />
                 </div>
                 <div>
-                <button className="btn btn-outline-info" onClick={navigateToVaccineList}>Back To Vaccine List</button>
-                <Routes>
-                    <Route path="/vaccineList" element={<VaccineList />} />
-                </Routes>
+                
             </div>
             </form>
             
