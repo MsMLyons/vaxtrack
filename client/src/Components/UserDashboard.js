@@ -5,7 +5,7 @@ function UserDashboard() {
 
     
   return (
-    <div>
+    <div className="main-background-color">
     <div className='user-dashboard-container'>
         <div className="user-information">
         <div className="user-introduction">
@@ -18,8 +18,47 @@ function UserDashboard() {
         </div>
         </div>
         <div className="family-members-information">
-        <div className="family-members-list" >Family members</div>
-        <div className="add-family-members"> <Link to="/newFamilyMember" className="nav-item nav-link" id="Contact"><button >Add new family member</button></Link></div>
+        <div className="family-members-list" >
+
+
+           <table class="table">
+  <thead>
+    <tr>
+      <th scope="col"></th>
+      <th scope="col">First name</th>
+      <th scope="col">Last name</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr >
+      <td scope="row" className="row-img"><img className="avatar-family-member" src="./avatar1.png" alt="..."/></td>
+  
+      <td>Mark</td>
+      <td>Otto</td>
+      <td><img className="arrow-icon" src="./arrow.png" alt="..."/></td>
+
+      
+    </tr>
+    <tr>
+      <td scope="row"><img className="avatar-family-member" src="./avatar2.png" alt="..."/></td>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td><img className="arrow-icon" src="./arrow.png" alt="..."/></td>
+      
+    </tr>
+    <tr>
+      <td scope="row"><img className="avatar-family-member" src="./avatar3.png" alt="..."/></td>
+      <td>Larry</td>
+      <td>Bird</td>
+      <td><img className="arrow-icon" src="./arrow.png" alt="..."/></td>
+      
+      
+    </tr>
+  </tbody>
+</table>
+        </div>
+        <div className="add-family-members"> <Link to="/newFamilyMember" className="nav-item nav-link" id="Contact"><button className="add-new-family-member" >Add new family member</button></Link></div>
         
         
         </div>
