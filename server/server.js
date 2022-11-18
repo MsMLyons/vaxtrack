@@ -12,7 +12,7 @@ app.use(require("./routes/vaccine")); // is this correct?
 // get driver connection
 const dbo = require("./db/conn");
 
-app.listen(port, () => {
+app.listen(PORT, () => {
     // connect to db when server starts
     dbo.connectToServer(function (err) {
         if (err) console.error(err);
