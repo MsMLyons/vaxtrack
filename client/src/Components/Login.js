@@ -1,18 +1,19 @@
 import React, {useState} from "react";
 import '../Style/Login.css'
-
+import { useNavigate, useLocation} from 'react-router-dom';
+import { Link } from 'react-router-dom'
 
 function Login() {
     const[userName, setUserName]=useState("")
     const[password, setPassword]=useState("")
+    const navigate = useNavigate();
     function handleSubmit(e){
         e.preventDefault()
         console.log("submitted");
         console.log(userName, password)
         setUserName('')
         setPassword('')
-
-        
+        navigate('/userDashboard')
     }
 
   return (
@@ -35,7 +36,7 @@ function Login() {
         
         </form>
 
-        <div className="form-btn-submit"><button className="new-member-button">Sign Up </button></div>
+        <div className="form-btn-submit"><Link to='/signUp' ><button className="new-member-button">Sign Up </button></Link></div>
 
 
     </div>

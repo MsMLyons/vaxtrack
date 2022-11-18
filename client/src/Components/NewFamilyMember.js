@@ -3,8 +3,8 @@ import '../Style/NewFamilyMember.css'
 import { useNavigate, useLocation} from 'react-router-dom';
 function NewFamilyMember() {
    const location = useLocation()
-   const {familyMembers, setFamilyMembers}= location.state
-   console.log(location.state)
+  //  const {familyMembers, setFamilyMembers}= location.state
+  //  console.log(location.state)
     
     
 
