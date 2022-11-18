@@ -30,8 +30,10 @@ function App() {
     const[loggedIn, setLoggedIn]=useState(false)
   return (
     <div className='page-container'>
+
     <div className="">
       <NavBar loggedIn={loggedIn} setLoggedIn={setLoggedIn}/>
+
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route path="/createVaccine" element={<CreateVaccine />} />
@@ -43,7 +45,7 @@ function App() {
         <Route path="/userDashboard"  element={<UserDashboard familyMembers={familyMembers} setFamilyMembers={setFamilyMembers} />} />
         <Route path="/newFamilyMember"  element={<NewFamilyMember familyMembers={familyMembers} setFamilyMembers={setFamilyMembers}/>} />
       </Routes>
-    <div id="content-wrap">
+    <div id="footer">
         <footer className="partners">
           <img src="./pfizer.png" alt='..' className="logo-vaccine"/>
           <img src="./moderna.png" alt='..' className="logo-vaccine"/>
@@ -53,8 +55,6 @@ function App() {
         </footer>
       </div>
     </div>
-    </div>
-     
   );
 };
 

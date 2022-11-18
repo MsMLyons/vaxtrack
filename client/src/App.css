@@ -37,12 +37,13 @@
   }
 }
 
-
-body{
-  min-height: 100vh;
+.page-container{
   display: flex;
+  min-height: 100vh;
   flex-direction: column;
+  justify-content: space-between;
 }
-footer{
+
+.footer{
   margin-top: auto;
 }
