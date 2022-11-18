@@ -65,7 +65,7 @@ export default function CreateVaccine() {
     // may need to read form values for typos and info errors
     return (
 
-        <div className="vaccineAddForm" "create-vaccine-dashboard">
+        <div className="vaccineAddForm">
             <h3>Add a New Vaccine Record</h3>
             <form onSubmit={onSubmit}>
                 <div className="form-group">
@@ -147,12 +147,11 @@ export default function CreateVaccine() {
                 </div>
                 <div className="form-group">
 
-                    <label htmlFor="medicalProfessional">Medical Professional Administering Vaccine</label>
                     <input
                         type="text"
                         className="effect-1"
                         id="medicalProfessional"
-                        placeholder="Medical Professional"
+                        placeholder="Medical Professional Administering Vaccine"
                         value={form.medicalProfessional}
                         onChange={(e) => updateForm({ medicalProfessional: e.target.value })}
                     />
