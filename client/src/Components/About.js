@@ -19,7 +19,7 @@ function About() {
                 <Card.Body>
                 <Card.Title>Marki Lyons</Card.Title>
                 <Card.Text>
-                    Full Stack Developer
+                    Team Lead & Full Stack Developer
                 </Card.Text>
                 </Card.Body>
             </Card>
@@ -28,7 +28,7 @@ function About() {
                 <Card.Body>
                 <Card.Title>Agnes Krokosz</Card.Title>
                 <Card.Text>
-                    Front End Developer
+                    Full Stack Developer
                 </Card.Text>
                 </Card.Body>
             </Card>

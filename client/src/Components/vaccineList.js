@@ -30,7 +30,11 @@ export default function VaccineList() {
     const [vaccines, setVaccines] = useState([]);
 
     function returnToDashboard(){
-      navigate("/userDashboard")
+      navigate("/userDashboard");
+    }
+
+    function navigateToCreateVaccine(){
+        navigate('/createVaccine');
     }
 
     // fetch vaccination records from db
@@ -80,6 +84,7 @@ export default function VaccineList() {
     return (
         <div className="vaccine-table-dashboard">
             <div className="new-family-member-headline"><div className="return-btn-container"><button className="btn btn-outline-info" onClick={returnToDashboard}>Return to dashboard</button></div>
+            <div><button className="btn btn-outline-info" onClick={navigateToCreateVaccine}>Add New Vaccine</button></div>
                 </div>
             <h4>Vaccination records for NAME</h4>
             <div className="vaccine-table">
