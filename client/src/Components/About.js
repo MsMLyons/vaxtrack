@@ -24,9 +24,8 @@ function About() {
                 </Card.Body>
             </Card>
             <Card>
-                <Card.Img variant="top" src="holder.js/100px160" />
                 <Card.Body>
-                <Card.Title>Agnes Krokosz</Card.Title>
+                <Card.Title><a href="https://www.linkedin.com/in/agnieszka-krokosz/">Agnes Krokosz</a></Card.Title>
                 <Card.Text>
                     Full Stack Developer
                 </Card.Text>
@@ -45,7 +44,6 @@ function About() {
             <CardGroup>   
             <Card>
                 <Card.Body>
-                <Card.Img variant="top" src="./mnphoto.jpg" />
                 <Card.Title><a href="https://www.linkedin.com/in/marina-nambiar/">Marina Nambiar</a></Card.Title>
                 <Card.Text>
                     Full Stack Developer
