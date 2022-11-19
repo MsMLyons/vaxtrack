@@ -1,17 +1,19 @@
 import React, {useState} from 'react'
 import '../Style/NewFamilyMember.css'
 import { useNavigate, useLocation} from 'react-router-dom';
-function NewFamilyMember() {
-    const location = useLocation()
-    const { familyMembers, setFamilyMembers } = location
-    console.log(location)
+function NewFamilyMember({familyMembers, setFamilyMembers}) {
+
+    
+    
 
     const navigate = useNavigate();
     const[newMember, setNewMember]=useState({name:"", last_name:"", picture: ""})
     function handleNewMember(e){
       e.preventDefault()
-      console.log(newMember)
-
+      
+      let newId = familyMembers.length+1
+      console.log( newId)
+      setFamilyMembers([...familyMembers, {id:newId ,name: newMember.name , picture: newMember.picture}])
       setNewMember({name:"", last_name:""})
       navigate("/userDashboard")
     }
@@ -34,7 +36,7 @@ function NewFamilyMember() {
                     <span class="focus-border"></span>
                 </div>
                 <div class="col">
-                    <input class="effect-1" type="text" placeholder="Upload picture" value={newMember.last_name} value={newMember.picture} onChange={(e)=>setNewMember({...newMember, picture: e.target.value})}/>
+                    <input class="effect-1" type="text" placeholder="Upload picture" value={newMember.picture} onChange={(e)=>setNewMember({...newMember, picture: e.target.value})}/>
                     <span class="focus-border"></span>
                 </div> 
                 <div className="form-btn-submit"><button   className="new-member-button">Add family member</button></div>

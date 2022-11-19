@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
+import vaccine from './VaccineListLocalStorage.js'
+
 import '../Style/VaccineList.css'
 
 const Vaccine = (props) => (
@@ -29,7 +31,7 @@ export default function VaccineList() {
     const navigate = useNavigate();
     const [vaccines, setVaccines] = useState([]);
     function addNewVaccine(){
-        console.log("new vaccine")
+        navigate("/createVaccine")
     }
     function returnToDashboard(){
       navigate("/userDashboard");
@@ -81,6 +83,10 @@ export default function VaccineList() {
             );
         });
     }
+    //commented below section out as it was interferring with navigation for buttons, giving a type as null error in console
+    // const location = useLocation()
+    // const {id}= location.state
+    
 
     // display vaccine records
     return (
@@ -91,7 +97,7 @@ export default function VaccineList() {
                     <button className="btn btn-outline-info" onClick={navigateToCreateVaccine}>Add new vaccine record</button></div>
                     <input placeholder="Search..."/>
                 </div>
-            <h4>Vaccination records for NAME</h4>
+            <h4 className="h4">Vaccination records for NAME</h4>
             <div className="vaccine-table">
             <table className="table table">
                 <thead>

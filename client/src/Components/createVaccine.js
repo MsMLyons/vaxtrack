@@ -17,9 +17,7 @@ export default function CreateVaccine() {
     });
     const navigate = useNavigate();
 
-    const navigateToVaccineList = () => {
-        navigate('/vaccineList');
-    };
+ 
 
     // update state properties
     function updateForm(value) {
@@ -60,13 +58,26 @@ export default function CreateVaccine() {
         navigate('/'); // make sure this route is correct
     }
 
+    function returnToDashboard(){
+        navigate('/userDashboard')
+    }
+    function navigateToVaccineList() {
+        navigate('/vaccineList');
+    };
+
     // form to create the vaccine record
     // add additional vaccine names to select from
     // may need to read form values for typos and info errors
     return (
-
-        <div className="vaccineAddForm">
-            <h3>Add a New Vaccine Record</h3>
+        <div className='create-vaccine-dashboard'>
+            <div className="return-btn-container">
+                    <button className="btn btn-outline-info" onClick={returnToDashboard}>Return to dashboard</button> 
+                    <button className="btn btn-outline-info" onClick={navigateToVaccineList}>Back To Vaccine List</button>
+                <Routes>
+                    <Route path="/vaccineList" element={<VaccineList />} />
+                </Routes>
+                </div>
+            <h4>Add a New Vaccine Record</h4>
             <form onSubmit={onSubmit}>
                 <div className="form-group">
                     <label htmlFor="vaccineName">Vaccine Name</label>
@@ -161,6 +172,7 @@ export default function CreateVaccine() {
                         type="text"
                         className="effect-1"
                         id="frequency"
+                        placeholder="Frequency"
                         value={form.frequency}
                         onChange={(e) => updateForm({ frequency: e.target.value })}
                     />
@@ -180,14 +192,11 @@ export default function CreateVaccine() {
                     <input
                         type="submit"
                         value="Create Vaccine Record"
-                        className="btn btn-primary"
+                        className="new-vaccine-button"
                     />
                 </div>
                 <div>
-                <button className="btn btn-outline-info" onClick={navigateToVaccineList}>Back To Vaccine List</button>
-                <Routes>
-                    <Route path="/vaccineList" element={<VaccineList />} />
-                </Routes>
+                
             </div>
             </form>
             

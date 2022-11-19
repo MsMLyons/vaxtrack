@@ -24,18 +24,17 @@ function About() {
                 </Card.Body>
             </Card>
             <Card>
-                <Card.Img variant="top" src="holder.js/100px160" />
                 <Card.Body>
-                <Card.Title>Agnes Krokosz</Card.Title>
+                <Card.Title><a href="https://www.linkedin.com/in/agnieszka-krokosz/">Agnes Krokosz</a></Card.Title>
                 <Card.Text>
                     Full Stack Developer
                 </Card.Text>
                 </Card.Body>
             </Card>
             <Card>
-                <Card.Img variant="top" src="holder.js/100px160" />
+                <Card.Img variant="top" src="./cdphoto.png" />
                 <Card.Body>
-                <Card.Title>Cherese Dafney</Card.Title>
+                <Card.Title><a href="https://www.linkedin.com/in/cherese-m-dafney-mph-21178572">Cherese Dafney</a></Card.Title>
                 <Card.Text>
                     Project Manager
                 </Card.Text>
@@ -44,9 +43,8 @@ function About() {
             </CardGroup>
             <CardGroup>   
             <Card>
-                <Card.Img variant="top" src="holder.js/100px160" />
                 <Card.Body>
-                <Card.Title>Marina Nambiar</Card.Title>
+                <Card.Title><a href="https://www.linkedin.com/in/marina-nambiar/">Marina Nambiar</a></Card.Title>
                 <Card.Text>
                     Full Stack Developer
                 </Card.Text>
