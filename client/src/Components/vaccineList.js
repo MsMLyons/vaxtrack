@@ -84,9 +84,7 @@ export default function VaccineList() {
         });
     }
     //commented below section out as it was interferring with navigation for buttons, giving a type as null error in console
-    // const location = useLocation()
-    // const {id}= location.state
-    
+ 
 
     // display vaccine records
     return (
@@ -97,7 +95,7 @@ export default function VaccineList() {
                     <button className="btn btn-outline-info" onClick={navigateToCreateVaccine}>Add new vaccine record</button></div>
                     <input placeholder="Search..."/>
                 </div>
-            <h4>Vaccination records for NAME</h4>
+            <h4 className="h4">Vaccination records </h4>
             <div className="vaccine-table">
             <table className="table table">
                 <thead>

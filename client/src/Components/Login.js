@@ -17,17 +17,17 @@ function Login({loggedIn, setLoggedIn}) {
 
   return (
     <div className="login-container">
-        <h4>Login</h4>
+
         <div>
         <form onSubmit={handleSubmit}>
             
-        <div className="col" >
+        <div className="col">
             <input class="effect-1" type="text" placeholder="Username" name="name" value={userName} onChange={(e)=> setUserName(e.target.value)}/>
             <span class="focus-border"></span>
         </div>
            
-        <div className="col">
-            <input class="effect-1" type="text" name="password" placeholder="Password" value={password} onChange={(e)=> setPassword(e.target.value)}/>
+        <div class="col" className="form-input-fields">
+            <input class="effect-1" type="text" name="name" placeholder="Password" value={password} onChange={(e)=> setPassword(e.target.value)}/>
             <span class="focus-border"></span>
         </div>
 

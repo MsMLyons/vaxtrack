@@ -55,7 +55,7 @@ export default function CreateVaccine() {
             frequency: '',
             description: '',
         });
-        navigate('/'); // make sure this route is correct
+        navigate('/vaccineList')
     }
 
     function returnToDashboard(){
@@ -193,6 +193,7 @@ export default function CreateVaccine() {
                         type="submit"
                         value="Create Vaccine Record"
                         className="new-vaccine-button"
+                        
                     />
                 </div>
                 <div>

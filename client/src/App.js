@@ -11,6 +11,7 @@ import SignUp from "./Components/SignUp"
 import About from "./Components/About"
 import UserDashboard from "./Components/UserDashboard"
 import NewFamilyMember from "./Components/NewFamilyMember"
+import Footer from "./Components/Footer"
 
 function App() {
       let members =[
@@ -30,8 +31,7 @@ function App() {
     const[loggedIn, setLoggedIn]=useState(false)
   return (
     <div className='page-container'>
-
-    <div className="">
+    
       <NavBar loggedIn={loggedIn} setLoggedIn={setLoggedIn}/>
 
       <Routes>
@@ -45,17 +45,11 @@ function App() {
         <Route path="/userDashboard"  element={<UserDashboard familyMembers={familyMembers} setFamilyMembers={setFamilyMembers} />} />
         <Route path="/newFamilyMember"  element={<NewFamilyMember familyMembers={familyMembers} setFamilyMembers={setFamilyMembers}/>} />
       </Routes>
-    <div id="footer">
-        <footer className="partners">
-          <img src="./pfizer.png" alt='..' className="logo-vaccine"/>
-          <img src="./moderna.png" alt='..' className="logo-vaccine"/>
-          <img src="./novartis.png" alt='..' className="logo-vaccine"/>
-          <img src="./merk.png" alt='..' className="logo-vaccine"/>
-          <img src="./johnson.png" alt='..' className="logo-vaccine"/>
-        </footer>
+    <Footer/>
       </div>
-    </div>
-    </div>
+    
+   
+     
   );
 };
 

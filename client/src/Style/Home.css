@@ -2,23 +2,32 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        margin: 3%;
+        margin-left: 1%;
+        min-height: 60vh;
 }
     
 .picture-main{
-        
         width: 45%;
         display: flex;
         justify-content: center;
 }
 .text-main{
+        text-align: center;
         margin-top: 4%;
         padding: 2%;
-        width: 45%;   
+        width: 45%; 
+        font-size: 14px;
+        line-height: 2rem;  
 }
 
 .filler{
         flex-grow:1;
 }
   
-
+.page-container{
+        height: 100vh
+}
+#main-page-img{
+        width: 35vw;
+  
+}
