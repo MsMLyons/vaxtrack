@@ -15,6 +15,7 @@ function About() {
         <h2>Meet Our Team</h2>
             <CardGroup>   
             <Card>
+            <Card.Img variant="top" src="./mlyons.png" />
                 <Card.Body>
                 <Card.Title><a href="https://www.linkedin.com/in/marki-lyons/">Marki Lyons</a></Card.Title>
                 <Card.Text>
