@@ -1,5 +1,5 @@
 .vaccine-table-dashboard{
-    margin-left: 0.5em;
+    margin-left: 0.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -8,8 +8,8 @@
     
 }
 .vaccine-table{
-    margin-right: 1rem;
-    margin-left: 1rem;}
+    margin-right: 3rem;
+    margin-left: 3rem;}
 
 button {
     margin-right: 0.5rem;
