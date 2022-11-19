@@ -13,7 +13,7 @@ function UserDashboard({familyMembers, setFamilyMembers}) {
                 "Building a daily skin care routine can help you maintain overall skin health or improve concerns like acne, scarring or dark spots. Find a cleanser, serum, moisturizer and sunscreen and give your skin the love it deserves."
               ]
 
-    let randomNumber = Math.floor(Math.random() * 10);
+    let randomNumber = 1 || Math.floor(Math.random() * 10);
 
     return (
       <div className="main-background-color">
