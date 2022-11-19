@@ -9,9 +9,9 @@ function Home() {
       <div className="text-main">
         <h5>FAMILY VACCINATION RECORD IN ONE PLACE</h5>
         <br/>
-        Vaxtrack serves as a repository for your vaccinations throughout yours or your child’s lifetime. 
-        This application allows the user to create individual accounts for themselves or family members for which they 
-        want to track their vaccination record.  </div>
+        Vaxtrack serves as a repository for your family vaccination records so that you have access to them when it matters most. 
+        This application allows the user to create individual accounts for themselves as well as family members to track vaccination records. 
+        </div>
       
       <div className="picture-main">
 
