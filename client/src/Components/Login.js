@@ -26,8 +26,8 @@ function Login({loggedIn, setLoggedIn}) {
             <span class="focus-border"></span>
         </div>
            
-        <div class="col" className="form-input-fields">
-            <input class="effect-1" type="text" name="name" placeholder="Password" value={password} onChange={(e)=> setPassword(e.target.value)}/>
+        <div className="col">
+            <input class="effect-1" type="password" name="name" placeholder="Password" value={password} onChange={(e)=> setPassword(e.target.value)}/>
             <span class="focus-border"></span>
         </div>
 
@@ -35,7 +35,7 @@ function Login({loggedIn, setLoggedIn}) {
         
         </form>
         </div>
-        <div className="form-btn-submit"><Link to='/signUp' ><button className="login-btn-submit">Sign Up </button></Link></div>
+        {/* <div className="form-btn-submit"><Link to='/signUp' ><button className="login-btn-submit">Sign Up </button></Link></div> */}
 
 
     </div>
