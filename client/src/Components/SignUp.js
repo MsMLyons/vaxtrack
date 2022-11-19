@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import '../Style/SignUp.css'
 
 function SignUp() {
     const[newUser, setNewUser]=useState({name:"", last_name: "",email: "",password:"", confirm_password:""})
@@ -9,42 +10,37 @@ function SignUp() {
     }
     return (
         <div className="login-container">
-        Signup
-        <img src='./VaxTrack.png' className='logo-login' alt="..."/>
-        <form onSubmit={handleSubmit}>
-            <div className="form-input-fields">
 
-                
-                  <label for="exampleInputEmail1">Name</label>
-                  <input type="text" className="form-control" />
-              
-            <label>
-            User name:
-            <input className="effect-1" type="text" placeholder="User name" name="name" value={newUser.name} onChange={(e)=> setNewUser({...newUser, name: e.target.value})}/>
-            </label>
-            <label>
-            Last name:
-            <input type="text" name="last_name" value={newUser.last_name} onChange={(e)=> setNewUser({...newUser, last_name: e.target.value})}/>
-            </label>
-            <label>
-            Email:
-            <input type="text" name="last_name" value={newUser.email} onChange={(e)=> setNewUser({...newUser, email: e.target.value})}/>
-            </label>
-            <label>
-            Passowrd:
-            <input type="password" name="name" value={newUser.password} onChange={(e)=> setNewUser({...newUser, password: e.target.value})}/>
-            </label>
-
-            <label>
-            Confirm passowrd:
-            <input type="password" name="name" value={newUser.confirm_password} onChange={(e)=> setNewUser({...newUser, confirm_password: e.target.value})}/>
-            </label>
-
-            <button>Sign Up</button>
+        
+            <div class="col" className="form_input-fields">
+                <input class="effect-1" type="text" placeholder="Username"/>
+                <span class="focus-border"></span>
             </div>
-        </form>
-        or
-        <button>Login</button>
+
+            <div class="col" className="form_input-fields">
+                <input class="effect-1" type="text" placeholder="Last Name"/>
+                <span class="focus-border"></span>
+            </div> 
+
+        
+            <div class="col" className="form_input-fields">
+                <input class="effect-1" type="text" placeholder="Email"/>
+                <span class="focus-border"></span>
+            </div> 
+
+            <div class="col" className="form_input-fields">
+                <input class="effect-1" type="text" placeholder="Password"/>
+                <span class="focus-border"></span>
+            </div> 
+
+            <div class="col" className="form_input-fields">
+                <input class="effect-1" type="text" placeholder="Confirm Password"/>
+                <span class="focus-border"></span>
+            </div> 
+        
+            <div className="form-btn-submit"><button className="login-btn-submit">Sign Up </button></div>
+            
+        
 
 
     </div>
