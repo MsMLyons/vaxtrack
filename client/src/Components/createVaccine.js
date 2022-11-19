@@ -17,7 +17,7 @@ export default function CreateVaccine() {
     });
     const navigate = useNavigate();
 
- 
+
 
     // update state properties
     function updateForm(value) {
