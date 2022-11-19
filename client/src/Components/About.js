@@ -44,6 +44,7 @@ function About() {
             </CardGroup>
             <CardGroup>   
             <Card>
+            <Card.Img variant="top" src="./mnphoto.jpg" />
                 <Card.Body>
                 <Card.Title><a href="https://www.linkedin.com/in/marina-nambiar/">Marina Nambiar</a></Card.Title>
                 <Card.Text>
