@@ -52,6 +52,7 @@ function About() {
                 </Card.Body>
             </Card>
             <Card>
+            <Card.Img variant="top" src="./spatel.jpg" />
                 <Card.Body>
                 <Card.Title><a href="http://www.linkedin.com/in/sachidpatel">Sachi Patel</a></Card.Title>
                 <Card.Text>
