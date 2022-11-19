@@ -20,6 +20,7 @@ function UserDashboard({familyMembers, setFamilyMembers}) {
         <div className="family-members-information">
           <h5>DISPLAY VACCINATION RECORDS</h5>
           <div className="family-members-list" >
+            
           {familyMembers.map(member => {return(
               <div className="card" key={member.id} >
                   <img className="card-img-top" src={member.picture} alt="..."/>

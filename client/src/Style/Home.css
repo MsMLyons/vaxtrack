@@ -21,4 +21,7 @@
         flex-grow:1;
 }
   
+.page-container{
+        height: 100vh
+}
 
