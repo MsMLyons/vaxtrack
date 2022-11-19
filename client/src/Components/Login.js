@@ -26,7 +26,7 @@ function Login() {
             <span class="focus-border"></span>
         </div>
            
-        <div class="col">
+        <div class="col" className="form-input-fields">
             <input class="effect-1" type="text" name="name" placeholder="Password" value={password} onChange={(e)=> setPassword(e.target.value)}/>
             <span class="focus-border"></span>
         </div>
