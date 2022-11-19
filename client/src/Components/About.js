@@ -17,7 +17,7 @@ function About() {
             <Card>
                 <Card.Img variant="top" src="holder.js/100px160" />
                 <Card.Body>
-                <Card.Title>Marki Lyons</Card.Title>
+                <Card.Title><a href="https://www.linkedin.com/in/marki-lyons/">Marki Lyons</a></Card.Title>
                 <Card.Text>
                     Team Lead & Full Stack Developer
                 </Card.Text>
@@ -53,7 +53,7 @@ function About() {
             <Card>
                 <Card.Img variant="top" src="holder.js/100px160" />
                 <Card.Body>
-                <Card.Title>Sachi Patel</Card.Title>
+                <Card.Title><a href="http://www.linkedin.com/in/sachidpatel">Sachi Patel</a></Card.Title>
                 <Card.Text>
                     Front End Developer
                 </Card.Text>
@@ -62,7 +62,7 @@ function About() {
             <Card>
                 <Card.Img variant="top" src="holder.js/100px160" />
                 <Card.Body>
-                <Card.Title>La&iacute;s Bordallo</Card.Title>
+                <Card.Title><a href="http://www.linkedin.com/in/la%C3%ADspinheiro">La&iacute;s Bordallo</a></Card.Title>
                 <Card.Text>
                     Project Documentation
                 </Card.Text>
