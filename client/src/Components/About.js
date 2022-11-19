@@ -24,7 +24,7 @@ function About() {
                 </Card.Body>
             </Card>
             <Card>
-                <Card.Img variant="top" src="./agapic.jpg" />
+                <Card.Img variant="top" src="./Agapic.jpg" />
                 <Card.Body>
                 <Card.Title><a href="https://www.linkedin.com/in/agnieszka-krokosz/">Agnes Krokosz</a></Card.Title>
                 <Card.Text>
