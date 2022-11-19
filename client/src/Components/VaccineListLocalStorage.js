@@ -8,9 +8,18 @@ let vaccine = [{
     medicalProfessional: "John Silverfish MD", 
     frequency: "-" ,
     description: "The MMR vaccine is a vaccine against measles, mumps, and rubella, abbreviated as MMR."
-}, 
-{
+}, {
     user_id: 1,
+    vaccineName:"MMR",
+    dateGiven: Date(),
+    dose:"One of one",
+    expiration: Date(), 
+    manufacturer:"Moderna", 
+    medicalProfessional: "John Silverfish MD", 
+    frequency: "-" ,
+    description: "The MMR vaccine is a vaccine against measles, mumps, and rubella, abbreviated as MMR."
+},{
+    user_id: 3,
     vaccineName:"MMR",
     dateGiven: Date(),
     dose:"One of one",
@@ -21,7 +30,7 @@ let vaccine = [{
     description: "The MMR vaccine is a vaccine against measles, mumps, and rubella, abbreviated as MMR."
 }, 
 {
-    user_id: 1,
+    user_id: 3,
     vaccineName:"MMR",
     dateGiven: Date(),
     dose:"One of one",

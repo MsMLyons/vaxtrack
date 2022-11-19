@@ -97,7 +97,7 @@ export default function VaccineList() {
                     <button className="btn btn-outline-info" onClick={navigateToCreateVaccine}>Add new vaccine record</button></div>
                     <input placeholder="Search..."/>
                 </div>
-            <h4>Vaccination records for NAME</h4>
+            <h4 className="h4">Vaccination records for NAME</h4>
             <div className="vaccine-table">
             <table className="table table">
                 <thead>
