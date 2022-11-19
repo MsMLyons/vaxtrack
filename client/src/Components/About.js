@@ -60,6 +60,7 @@ function About() {
                 </Card.Body>
             </Card>
             <Card>
+            <Card.Img variant="top" src="./lais.jpg" />
                 <Card.Body>
                 <Card.Title><a href="http://www.linkedin.com/in/la%C3%ADspinheiro">La&iacute;s Bordallo</a></Card.Title>
                 <Card.Text>
